@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<!-- saved from url=(0081)https://rafinska99.atlassian.net/si/jira.issueviews:issue-html/BOOK-8/BOOK-8.html -->
+<html class="webkit chrome"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>[#BOOK-8] Nie pojawia się komunikat walidacyjny przy polu "Confirm passworld"</title>
+    
+            
+        <script>
+window.WRM=window.WRM||{};window.WRM._unparsedData=window.WRM._unparsedData||{};window.WRM._unparsedErrors=window.WRM._unparsedErrors||{};
+WRM._unparsedData["com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path.context-path"]="\"\"";
+WRM._unparsedData["com.atlassian.plugins.atlassian-plugins-webresource-rest:curl.cross-origin-resources"]="false";
+WRM._unparsedData["jira.webresources:feature-flags.feature-flag-data"]="{\"enabled-feature-keys\":[\"com.atlassian.jira.projects.issuenavigator\",\"connect.no-applinks\",\"nps.survey.inline.dialog\",\"atlassian.aui.raphael.disabled\",\"com.atlassian.jira.projects.ProjectCentricNavigation.Switch\"],\"feature-flag-states\":{\"com.atlassian.jira.plugins.mail.internal\":false,\"com.atlassian.jira.feature.flag.for.TestFeatureFlagResource\":false,\"jira.feature.rest.single.step.avatar.upload\":true,\"jira.ondemand.maintain.trusted.apps\":true}}";
+WRM._unparsedData["com.atlassian.jira.jira-client-analytics-plugin:analytics-context-provider.client-analytic-descriptors"]="{\"analyticsResource\":{\"jira-core\":{\"events\":{\"issue.comment.added\":{\"trigger\":\"click #issue-comment-add-submit\",\"properties\":{\"comment-length\":\"value.length #issue-comment-add #comment\"}}}}},\"tenantId\":\"207f34db-6143-447a-847c-ff33c744f66f\",\"aid\":\"641f50549d2bc6c90a8bd37f\",\"env\":\"prod\"}";
+WRM._unparsedData["jira.webresources:default-comment-security-level.DefaultCommentSecurityLevelHelpLink"]="{\"extraClasses\":\"default-comment-level-help\",\"title\":\"Commenting on an Issue\",\"url\":\"https://confluence.atlassian.com/display/JIRASOFTWARECLOUD/Editing+and+collaborating+on+issues#Editingandcollaboratingonissues-addcommentsCommentingonissues\",\"isLocal\":false}";
+WRM._unparsedData["jira.webresources:key-commands.shortcuts"]="[{\"moduleKey\":\"go-to-dashboard-kb-shortcut\",\"keys\":[[\"g\",\"d\"]],\"context\":\"global\",\"op\":\"goTo\",\"param\":\"/secure/Dashboard.jspa\"},{\"moduleKey\":\"greenhopper-gh-shortcut\",\"keys\":[[\"g\",\"h\"]],\"context\":\"global\",\"op\":\"execute\",\"param\":\"gh.app.globalkeyboardshortcuts.goToAgile();\"},{\"moduleKey\":\"browse-project-kb-shortcut\",\"keys\":[[\"g\",\"p\"]],\"context\":\"global\",\"op\":\"execute\",\"param\":\"var elem = jQuery(\\\"#browse_link\\\");\\n                if (elem.length \u003e 0) {\\n                    window.location.href = elem.attr(\\\"href\\\");\\n                }\"},{\"moduleKey\":\"greenhopper-agile-shortcut\",\"keys\":[[\"g\",\"a\"]],\"context\":\"global\",\"op\":\"execute\",\"param\":\"gh.app.globalkeyboardshortcuts.goToAgile();\"},{\"moduleKey\":\"issue-navigator-kb-shortcut\",\"keys\":[[\"g\",\"i\"]],\"context\":\"global\",\"op\":\"execute\",\"param\":\"var elem = jQuery(\\\"#find_link\\\");\\n                if (elem.length \u003e 0) {\\n                    window.location.href = elem.attr(\\\"href\\\");\\n                }\"},{\"moduleKey\":\"admin.quicksearch.dialog.shortcut\",\"keys\":[[\"g\",\"g\"]],\"context\":\"global\",\"op\":\"execute\",\"param\":\"JIRA.Shifter.show();\"},{\"moduleKey\":\"quicksearch\",\"keys\":[[\"/\"]],\"context\":\"global\",\"op\":\"moveToAndFocus\",\"param\":\"#quickSearchInput, #admin-quick-nav-field\"},{\"moduleKey\":\"create.issue\",\"keys\":[[\"c\"]],\"context\":\"global\",\"op\":\"moveToAndClick\",\"param\":\"#header .create-issue\"},{\"moduleKey\":\"shifter\",\"keys\":[[\".\"]],\"context\":\"global\",\"op\":\"execute\",\"param\":\"JIRA.Shifter.show();\"},{\"moduleKey\":\"help\",\"keys\":[[\"?\"]],\"context\":\"global\",\"op\":\"click\",\"param\":\"#keyshortscuthelp\"}]";
+if(window.WRM._dataArrived)window.WRM._dataArrived();</script>
+<link type="text/css" rel="stylesheet" href="./bdbvjcvdvc_files/batch.css" data-wrm-key="_super" data-wrm-batch-type="context" media="all">
+<link type="text/css" rel="stylesheet" href="./bdbvjcvdvc_files/com.atlassian.auiplugin_aui-labels.css" data-wrm-key="com.atlassian.auiplugin:aui-labels" data-wrm-batch-type="resource" media="all">
+<link type="text/css" rel="stylesheet" href="./bdbvjcvdvc_files/jira.webresources_theme-adg3.css" data-wrm-key="jira.webresources:theme-adg3" data-wrm-batch-type="resource" media="all">
+<link type="text/css" rel="stylesheet" href="./bdbvjcvdvc_files/jira.webresources_global-static.css" data-wrm-key="jira.webresources:global-static" data-wrm-batch-type="resource" media="all">
+<script type="text/javascript" src="./bdbvjcvdvc_files/batch.js.pobrane" data-wrm-key="_super" data-wrm-batch-type="context" data-initially-rendered=""></script><style type="text/css"></style><style type="text/css"></style>
+<script type="text/javascript" src="./bdbvjcvdvc_files/jira.webresources_global-static.js.pobrane" data-wrm-key="jira.webresources:global-static" data-wrm-batch-type="resource" data-initially-rendered=""></script>
+<script>
+window.WRM=window.WRM||{};window.WRM._unparsedData=window.WRM._unparsedData||{};window.WRM._unparsedErrors=window.WRM._unparsedErrors||{};
+WRM._unparsedData["_wrmBatchContents"]="{\"js\":{\"_super\":[\"jira.webresources:es6-promise\",\"jira.webresources:promise-polyfill\",\"jira.webresources:usertiming-polyfill\",\"jira.webresources:almond\",\"jira.webresources:almond-analytics\",\"com.atlassian.auiplugin:aui-reset\",\"com.atlassian.auiplugin:aui-page-typography\",\"com.atlassian.auiplugin:aui-avatars\",\"com.atlassian.auiplugin:aui-page-layout\",\"com.atlassian.plugins.atlassian-plugins-webresource-plugin:data\",\"com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path\",\"com.atlassian.auiplugin:ajs-contextpath\",\"com.atlassian.plugins.jquery:jquery-1.7.2\",\"com.atlassian.plugins.jquery:jquery\",\"com.atlassian.auiplugin:jquery-lib\",\"com.atlassian.auiplugin:jquery-compatibility\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-polyfills-console\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-jquery\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-create-element\",\"com.atlassian.auiplugin:internal-object-assign-4.0.1-index\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-internal-globalize\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-internal-deprecation\",\"com.atlassian.auiplugin:aui-deprecation\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-polyfills-custom-event\",\"com.atlassian.auiplugin:internal-skatejs-0.13.17-lib-constants\",\"com.atlassian.auiplugin:internal-skatejs-0.13.17-lib-version\",\"com.atlassian.auiplugin:internal-skatejs-0.13.17-lib-globals\",\"com.atlassian.auiplugin:internal-skatejs-0.13.17-lib-data\",\"com.atlassian.auiplugin:internal-skatejs-0.13.17-lib-mutation-observer\",\"com.atlassian.auiplugin:internal-skatejs-0.13.17-lib-utils\",\"com.atlassian.auiplugin:internal-skatejs-0.13.17-lib-registry\",\"com.atlassian.auiplugin:internal-skatejs-0.13.17-lib-lifecycle\",\"com.atlassian.auiplugin:internal-skatejs-0.13.17-lib-fix-ie-innerhtml\",\"com.atlassian.auiplugin:internal-skatejs-0.13.17-lib-document-observer\",\"com.atlassian.auiplugin:internal-skatejs-0.13.17-lib-skate\",\"com.atlassian.auiplugin:internal-tether-0.6.5-tether\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-version\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-prevent-default\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-stop-event\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-index-of\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-contains\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-include\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-toggle-class-name\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-set-visible\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-set-current\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-is-visible\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-is-clipped\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-params\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-populate-parameters\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-internal-log\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-to-init\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-firebug\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-clone\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-alphanum\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-on-text-resize\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-unbind-text-resize\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-escape\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-escape-html\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-filter-by-search\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-debounce\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-unique-id\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-internal-add-id\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-forms\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-setup\",\"com.atlassian.auiplugin:deprecated-legacy-ajs-file\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-format\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-internal-animation\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-feature-flags\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-blanket\",\"com.atlassian.auiplugin:aui-core\",\"com.atlassian.auiplugin:internal-basic-css\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-vendor-jquery-plugins-jquery-aop\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-drop-down\",\"com.atlassian.auiplugin:dropdown\",\"com.atlassian.auiplugin:icons\",\"com.atlassian.auiplugin:table\",\"com.atlassian.auiplugin:internal-form-css\",\"com.atlassian.auiplugin:internal-message-css\",\"com.atlassian.auiplugin:ajs-gadgets-base\",\"com.atlassian.auiplugin:toolbar\",\"com.atlassian.auiplugin:aui-buttons\",\"com.atlassian.auiplugin:aui-toolbar2\",\"com.atlassian.soy.soy-template-plugin:soy-deps\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-internal-widget\",\"com.atlassian.auiplugin:internal-aui-widget\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-internal-i18n-aui\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-i18n\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-internal-skate\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-navigation\",\"com.atlassian.auiplugin:aui-navigation\",\"com.atlassian.auiplugin:aui-experimental-iconfont\",\"com.atlassian.auiplugin:aui-header-unresponsive\",\"com.atlassian.auiplugin:internal-skatejs-template-html-0.0.0-dist-template-html\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-internal-header-create-header\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-header\",\"com.atlassian.auiplugin:aui-header\",\"com.atlassian.auiplugin:aui-page-header\",\"com.atlassian.auiplugin:aui-page-suite\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-focus-manager\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-key-code\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-layer\",\"com.atlassian.auiplugin:aui-feature-flags\",\"com.atlassian.auiplugin:aui-focus-manager\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-layer-manager\",\"com.atlassian.auiplugin:keycode\",\"com.atlassian.auiplugin:aui-layer-manager\",\"com.atlassian.auiplugin:layer\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-internal-alignment\",\"com.atlassian.auiplugin:aui-alignment\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-internal-browser\",\"com.atlassian.auiplugin:internal-aui-browser\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-internal-state\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-dropdown2\",\"com.atlassian.auiplugin:aui-dropdown2\",\"com.atlassian.auiplugin:internal-fancy-file-input-2.0.1-dist-fancy-file-input\",\"com.atlassian.auiplugin:internal-src-js-aui-fancy-file-input\",\"com.atlassian.auiplugin:fancy-file-input\",\"com.atlassian.auiplugin:hotkeys\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-event\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-dialog\",\"com.atlassian.auiplugin:dialog\",\"com.atlassian.auiplugin:internal-css.escape-1.5.0-css-escape\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-inline-dialog\",\"com.atlassian.auiplugin:internal-inline-dialog-common\",\"com.atlassian.auiplugin:inline-dialog\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-template\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-messages\",\"com.atlassian.auiplugin:message\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-tabs\",\"com.atlassian.auiplugin:tabs\",\"com.atlassian.auiplugin:jquery-ui-core-1.8.24-patched\",\"com.atlassian.auiplugin:jquery-ui-core\",\"com.atlassian.auiplugin:internal-jquery-ui-partial\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-jquery-jquery-hotkeys\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-jquery-jquery-moveto\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-vendor-underscorejs-underscore\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-underscore\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-when-i-type\",\"com.atlassian.auiplugin:internal-keyboardshortcuts\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-cookie\",\"com.atlassian.auiplugin:cookie\",\"com.atlassian.auiplugin:template\",\"com.atlassian.auiplugin:event\",\"com.atlassian.auiplugin:internal-ajs-no-context-path\",\"com.atlassian.auiplugin:ajs\",\"com.atlassian.auiplugin:jquery-ui\",\"com.atlassian.plugin.jslibs:jquery.textoverflow-0.7.4\",\"com.atlassian.plugin.jslibs:jquery.pjax-2011.07.10\",\"com.atlassian.plugin.jslibs:jquery.lazyload-1.8.0\",\"com.atlassian.plugin.jslibs:jquery.flot-0.7\",\"com.atlassian.plugin.jslibs:jquery.effects-1.8rc3\",\"com.atlassian.plugin.jslibs:jquery.dragtable-2.0.4\",\"com.atlassian.plugin.jslibs:jquery.serializeobject-0.2\",\"com.atlassian.plugin.jslibs:jquery.scrollintoview-1.8\",\"jira.webresources:jquery\",\"jira.webresources:aui-core-amd-shim\",\"com.atlassian.auiplugin:aui-badge\",\"com.atlassian.auiplugin:aui-lozenge\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-vendor-spin-spin\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-vendor-jquery-jquery-spin\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-spin\",\"com.atlassian.auiplugin:aui-spinner\",\"com.atlassian.auiplugin:aui-experimental-spinner\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-internal-amdify\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-flag\",\"com.atlassian.auiplugin:aui-flag\",\"com.atlassian.plugins.atlassian-plugins-webresource-rest:curl\",\"com.atlassian.plugins.atlassian-plugins-webresource-rest:require-handler-v2\",\"com.atlassian.plugins.atlassian-plugins-webresource-rest:web-resource-manager\",\"com.atlassian.plugin.jslibs:skate-0.12.6\",\"jira.webresources:skate\",\"jira.webresources:icons\",\"jira.webresources:jira-logger\",\"jira.webresources:deprecator\",\"jira.webresources:legacy-namespacing\",\"com.atlassian.auiplugin:ajs-underscorejs\",\"jira.webresources:ajs-underscorejs-amd-shim\",\"jira.webresources:jira-metadata\",\"jira.webresources:aui-extensions\",\"jira.webresources:feature-flags\",\"jira.webresources:jira-events\",\"jira.webresources:jira-formatter\",\"jira.webresources:browser-properties\",\"jira.webresources:top-same-origin-window\",\"jira.webresources:util-lite\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-vendor-backbone-backbone\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-backbone\",\"com.atlassian.auiplugin:ajs-backbone\",\"jira.webresources:ajs-backbone-amd-shim\",\"jira.webresources:number-formatter\",\"jira.webresources:util\",\"jira.webresources:content-retrievers\",\"jira.webresources:list-styles\",\"jira.webresources:inline-layer\",\"jira.webresources:list\",\"jira.webresources:dropdown\",\"jira.webresources:issue-table-adg3\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-vendor-jquery-jquery-tipsy\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-tipsy\",\"com.atlassian.auiplugin:aui-tipsy\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-tooltip\",\"com.atlassian.auiplugin:aui-tooltips\",\"com.atlassian.auiplugin:aui-experimental-tooltips\",\"com.atlassian.plugins.issue-status-plugin:issue-status-resources\",\"jira.webresources:issue-statuses\",\"jira.webresources:issue-table\",\"jira.webresources:select-model\",\"jira.webresources:general-configuration\",\"com.atlassian.auiplugin:aui-experimental-soy-templates\",\"jira.webresources:js-soy-templates\",\"jira.webresources:page-loading-indicator\",\"jira.webresources:messages\",\"jira.webresources:jira-dialog-core\",\"com.atlassian.jira.jira-issue-nav-plugin:issues-api\",\"com.atlassian.jira.jira-issue-nav-plugin:issuenav-legacy\",\"jira.webresources:jira-issuenavigator\",\"jira.webresources:jira-dialog-config\",\"jira.webresources:set-focus\",\"jira.webresources:select-pickers\",\"jira.webresources:jira-analytics-amd\",\"jira.webresources:trigger-custom-event\",\"com.atlassian.jira.jira-client-analytics-plugin:analytics-web-client-library\",\"com.atlassian.jira.jira-client-analytics-plugin:analytics-context-provider\",\"com.atlassian.jira.jira-client-analytics-plugin:analytics-events-transformers\",\"com.atlassian.jira.jira-client-analytics-plugin:analytics-web-client\",\"jira.webresources:shifter\",\"com.atlassian.jira.jira-npmbridge-plugin:atlassian-spa-iframe-amd\",\"com.atlassian.plugins.browser.metrics.browser-metrics-plugin:api\",\"com.atlassian.jira.jira-atlaskit-plugin:sidebar\",\"com.atlassian.jira.jira-atlaskit-plugin:forge\",\"com.atlassian.jira.jira-atlaskit-plugin:container-api\",\"jira.webresources:inline-attach\",\"jira.webresources:dialogs\",\"jira.webresources:default-comment-security-level\",\"jira.webresources:dropdown-select\",\"jira.webresources:user-management\",\"jira.webresources:mentions-base\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-progressive-data-set\",\"com.atlassian.auiplugin:aui-experimental-data-handlers\",\"jira.webresources:data-sets\",\"jira.webresources:mentions-feature\",\"jira.webresources:mentions\",\"jira.webresources:jira-edition\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-banner\",\"com.atlassian.auiplugin:aui-banner\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-trigger\",\"com.atlassian.auiplugin:aui-trigger\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-internal-attributes\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-internal-enforcer\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-inline-dialog2\",\"com.atlassian.auiplugin:aui-inline-dialog2\",\"jira.webresources:keyboard-shortcut-toggle\",\"jira.webresources:assignee-picker\",\"jira.webresources:jira-global\",\"jira.webresources:key-commands\",\"jira.webresources:header\",\"jira.webresources:superbatch-default\",\"_context:_super\"]},\"css\":{\"_super\":[\"jira.webresources:es6-promise\",\"jira.webresources:promise-polyfill\",\"jira.webresources:usertiming-polyfill\",\"jira.webresources:almond\",\"jira.webresources:almond-analytics\",\"com.atlassian.auiplugin:aui-reset\",\"com.atlassian.auiplugin:aui-page-typography\",\"com.atlassian.auiplugin:aui-avatars\",\"com.atlassian.auiplugin:aui-page-layout\",\"com.atlassian.plugins.atlassian-plugins-webresource-plugin:data\",\"com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path\",\"com.atlassian.auiplugin:ajs-contextpath\",\"com.atlassian.plugins.jquery:jquery-1.7.2\",\"com.atlassian.plugins.jquery:jquery\",\"com.atlassian.auiplugin:jquery-lib\",\"com.atlassian.auiplugin:jquery-compatibility\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-polyfills-console\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-jquery\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-create-element\",\"com.atlassian.auiplugin:internal-object-assign-4.0.1-index\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-internal-globalize\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-internal-deprecation\",\"com.atlassian.auiplugin:aui-deprecation\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-polyfills-custom-event\",\"com.atlassian.auiplugin:internal-skatejs-0.13.17-lib-constants\",\"com.atlassian.auiplugin:internal-skatejs-0.13.17-lib-version\",\"com.atlassian.auiplugin:internal-skatejs-0.13.17-lib-globals\",\"com.atlassian.auiplugin:internal-skatejs-0.13.17-lib-data\",\"com.atlassian.auiplugin:internal-skatejs-0.13.17-lib-mutation-observer\",\"com.atlassian.auiplugin:internal-skatejs-0.13.17-lib-utils\",\"com.atlassian.auiplugin:internal-skatejs-0.13.17-lib-registry\",\"com.atlassian.auiplugin:internal-skatejs-0.13.17-lib-lifecycle\",\"com.atlassian.auiplugin:internal-skatejs-0.13.17-lib-fix-ie-innerhtml\",\"com.atlassian.auiplugin:internal-skatejs-0.13.17-lib-document-observer\",\"com.atlassian.auiplugin:internal-skatejs-0.13.17-lib-skate\",\"com.atlassian.auiplugin:internal-tether-0.6.5-tether\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-version\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-prevent-default\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-stop-event\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-index-of\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-contains\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-include\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-toggle-class-name\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-set-visible\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-set-current\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-is-visible\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-is-clipped\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-params\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-populate-parameters\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-internal-log\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-to-init\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-firebug\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-clone\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-alphanum\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-on-text-resize\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-unbind-text-resize\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-escape\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-escape-html\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-filter-by-search\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-debounce\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-unique-id\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-internal-add-id\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-forms\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-setup\",\"com.atlassian.auiplugin:deprecated-legacy-ajs-file\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-format\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-internal-animation\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-feature-flags\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-blanket\",\"com.atlassian.auiplugin:aui-core\",\"com.atlassian.auiplugin:internal-basic-css\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-vendor-jquery-plugins-jquery-aop\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-drop-down\",\"com.atlassian.auiplugin:dropdown\",\"com.atlassian.auiplugin:icons\",\"com.atlassian.auiplugin:table\",\"com.atlassian.auiplugin:internal-form-css\",\"com.atlassian.auiplugin:internal-message-css\",\"com.atlassian.auiplugin:ajs-gadgets-base\",\"com.atlassian.auiplugin:toolbar\",\"com.atlassian.auiplugin:aui-buttons\",\"com.atlassian.auiplugin:aui-toolbar2\",\"com.atlassian.soy.soy-template-plugin:soy-deps\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-internal-widget\",\"com.atlassian.auiplugin:internal-aui-widget\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-internal-i18n-aui\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-i18n\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-internal-skate\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-navigation\",\"com.atlassian.auiplugin:aui-navigation\",\"com.atlassian.auiplugin:aui-experimental-iconfont\",\"com.atlassian.auiplugin:aui-header-unresponsive\",\"com.atlassian.auiplugin:internal-skatejs-template-html-0.0.0-dist-template-html\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-internal-header-create-header\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-header\",\"com.atlassian.auiplugin:aui-header\",\"com.atlassian.auiplugin:aui-page-header\",\"com.atlassian.auiplugin:aui-page-suite\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-focus-manager\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-key-code\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-layer\",\"com.atlassian.auiplugin:aui-feature-flags\",\"com.atlassian.auiplugin:aui-focus-manager\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-layer-manager\",\"com.atlassian.auiplugin:keycode\",\"com.atlassian.auiplugin:aui-layer-manager\",\"com.atlassian.auiplugin:layer\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-internal-alignment\",\"com.atlassian.auiplugin:aui-alignment\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-internal-browser\",\"com.atlassian.auiplugin:internal-aui-browser\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-internal-state\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-dropdown2\",\"com.atlassian.auiplugin:aui-dropdown2\",\"com.atlassian.auiplugin:internal-fancy-file-input-2.0.1-dist-fancy-file-input\",\"com.atlassian.auiplugin:internal-src-js-aui-fancy-file-input\",\"com.atlassian.auiplugin:fancy-file-input\",\"com.atlassian.auiplugin:hotkeys\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-event\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-dialog\",\"com.atlassian.auiplugin:dialog\",\"com.atlassian.auiplugin:internal-css.escape-1.5.0-css-escape\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-inline-dialog\",\"com.atlassian.auiplugin:internal-inline-dialog-common\",\"com.atlassian.auiplugin:inline-dialog\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-template\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-messages\",\"com.atlassian.auiplugin:message\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-tabs\",\"com.atlassian.auiplugin:tabs\",\"com.atlassian.auiplugin:jquery-ui-core-1.8.24-patched\",\"com.atlassian.auiplugin:jquery-ui-core\",\"com.atlassian.auiplugin:internal-jquery-ui-partial\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-jquery-jquery-hotkeys\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-jquery-jquery-moveto\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-vendor-underscorejs-underscore\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-underscore\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-when-i-type\",\"com.atlassian.auiplugin:internal-keyboardshortcuts\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-cookie\",\"com.atlassian.auiplugin:cookie\",\"com.atlassian.auiplugin:template\",\"com.atlassian.auiplugin:event\",\"com.atlassian.auiplugin:internal-ajs-no-context-path\",\"com.atlassian.auiplugin:ajs\",\"com.atlassian.auiplugin:jquery-ui\",\"com.atlassian.plugin.jslibs:jquery.textoverflow-0.7.4\",\"com.atlassian.plugin.jslibs:jquery.pjax-2011.07.10\",\"com.atlassian.plugin.jslibs:jquery.lazyload-1.8.0\",\"com.atlassian.plugin.jslibs:jquery.flot-0.7\",\"com.atlassian.plugin.jslibs:jquery.effects-1.8rc3\",\"com.atlassian.plugin.jslibs:jquery.dragtable-2.0.4\",\"com.atlassian.plugin.jslibs:jquery.serializeobject-0.2\",\"com.atlassian.plugin.jslibs:jquery.scrollintoview-1.8\",\"jira.webresources:jquery\",\"jira.webresources:aui-core-amd-shim\",\"com.atlassian.auiplugin:aui-badge\",\"com.atlassian.auiplugin:aui-lozenge\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-vendor-spin-spin\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-vendor-jquery-jquery-spin\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-spin\",\"com.atlassian.auiplugin:aui-spinner\",\"com.atlassian.auiplugin:aui-experimental-spinner\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-internal-amdify\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-flag\",\"com.atlassian.auiplugin:aui-flag\",\"com.atlassian.plugins.atlassian-plugins-webresource-rest:curl\",\"com.atlassian.plugins.atlassian-plugins-webresource-rest:require-handler-v2\",\"com.atlassian.plugins.atlassian-plugins-webresource-rest:web-resource-manager\",\"com.atlassian.plugin.jslibs:skate-0.12.6\",\"jira.webresources:skate\",\"jira.webresources:icons\",\"jira.webresources:jira-logger\",\"jira.webresources:deprecator\",\"jira.webresources:legacy-namespacing\",\"com.atlassian.auiplugin:ajs-underscorejs\",\"jira.webresources:ajs-underscorejs-amd-shim\",\"jira.webresources:jira-metadata\",\"jira.webresources:aui-extensions\",\"jira.webresources:feature-flags\",\"jira.webresources:jira-events\",\"jira.webresources:jira-formatter\",\"jira.webresources:browser-properties\",\"jira.webresources:top-same-origin-window\",\"jira.webresources:util-lite\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-vendor-backbone-backbone\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-backbone\",\"com.atlassian.auiplugin:ajs-backbone\",\"jira.webresources:ajs-backbone-amd-shim\",\"jira.webresources:number-formatter\",\"jira.webresources:util\",\"jira.webresources:content-retrievers\",\"jira.webresources:list-styles\",\"jira.webresources:inline-layer\",\"jira.webresources:list\",\"jira.webresources:dropdown\",\"jira.webresources:issue-table-adg3\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-vendor-jquery-jquery-tipsy\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-tipsy\",\"com.atlassian.auiplugin:aui-tipsy\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-tooltip\",\"com.atlassian.auiplugin:aui-tooltips\",\"com.atlassian.auiplugin:aui-experimental-tooltips\",\"com.atlassian.plugins.issue-status-plugin:issue-status-resources\",\"jira.webresources:issue-statuses\",\"jira.webresources:issue-table\",\"jira.webresources:select-model\",\"jira.webresources:general-configuration\",\"com.atlassian.auiplugin:aui-experimental-soy-templates\",\"jira.webresources:js-soy-templates\",\"jira.webresources:page-loading-indicator\",\"jira.webresources:messages\",\"jira.webresources:jira-dialog-core\",\"com.atlassian.jira.jira-issue-nav-plugin:issues-api\",\"com.atlassian.jira.jira-issue-nav-plugin:issuenav-legacy\",\"jira.webresources:jira-issuenavigator\",\"jira.webresources:jira-dialog-config\",\"jira.webresources:set-focus\",\"jira.webresources:select-pickers\",\"jira.webresources:jira-analytics-amd\",\"jira.webresources:trigger-custom-event\",\"com.atlassian.jira.jira-client-analytics-plugin:analytics-web-client-library\",\"com.atlassian.jira.jira-client-analytics-plugin:analytics-context-provider\",\"com.atlassian.jira.jira-client-analytics-plugin:analytics-events-transformers\",\"com.atlassian.jira.jira-client-analytics-plugin:analytics-web-client\",\"jira.webresources:shifter\",\"com.atlassian.jira.jira-npmbridge-plugin:atlassian-spa-iframe-amd\",\"com.atlassian.plugins.browser.metrics.browser-metrics-plugin:api\",\"com.atlassian.jira.jira-atlaskit-plugin:sidebar\",\"com.atlassian.jira.jira-atlaskit-plugin:forge\",\"com.atlassian.jira.jira-atlaskit-plugin:container-api\",\"jira.webresources:inline-attach\",\"jira.webresources:dialogs\",\"jira.webresources:default-comment-security-level\",\"jira.webresources:dropdown-select\",\"jira.webresources:user-management\",\"jira.webresources:mentions-base\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-progressive-data-set\",\"com.atlassian.auiplugin:aui-experimental-data-handlers\",\"jira.webresources:data-sets\",\"jira.webresources:mentions-feature\",\"jira.webresources:mentions\",\"jira.webresources:jira-edition\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-banner\",\"com.atlassian.auiplugin:aui-banner\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-trigger\",\"com.atlassian.auiplugin:aui-trigger\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-internal-attributes\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-internal-enforcer\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-inline-dialog2\",\"com.atlassian.auiplugin:aui-inline-dialog2\",\"jira.webresources:keyboard-shortcut-toggle\",\"jira.webresources:assignee-picker\",\"jira.webresources:jira-global\",\"jira.webresources:key-commands\",\"jira.webresources:header\",\"jira.webresources:superbatch-default\",\"_context:_super\"]}}";
+if(window.WRM._dataArrived)window.WRM._dataArrived();</script>
+
+        <style type="text/css">
+
+.tableBorder, .grid
+{
+    background-color: #fff;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tableBorder td, .grid td
+{
+    vertical-align: top;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+
+.noPadding
+{
+    padding: 0 !important;
+}
+
+h3 .subText
+{
+    font-size: 60%;
+    font-weight: normal;
+}
+
+.tabLabel
+{
+    font-weight: bold;
+    border: 1px solid #ccc;
+    border-bottom:none;
+    padding: 2px;
+    display: inline;
+}
+
+td.blank
+{
+    padding: 0;
+    margin: 0;
+}
+
+.blank td
+{
+    border: none;
+}
+
+#descriptionArea
+{
+    margin: 0;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+
+hr
+{
+    border-top:1px solid #aaa;
+}
+
+hr.fullcontent
+{
+  height: 15px;
+  padding: 10px 0;
+  background: #fff url('https://rafinska99.atlassian.net/images/icons/hr.gif') no-repeat scroll center;
+}
+
+</style>
+
+<script type="text/javascript" charset="utf-8" src="./bdbvjcvdvc_files/batch.js(1).pobrane"></script><script type="text/javascript" charset="utf-8" src="./bdbvjcvdvc_files/batch.js(2).pobrane"></script></head>
+<body data-aui-version="6.0.5" cz-shortcut-listen="true">
+<header id="previous-view">
+    <nav class="aui-toolbar">
+        <div class="toolbar-split toolbar-split-right">
+            <ul class="toolbar-group">
+                <li class="toolbar-item">
+                    <a href="https://rafinska99.atlassian.net/browse/BOOK-8" class="toolbar-trigger">Wróć do poprzedniego widoku</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tbody><tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [BOOK-8]&nbsp;<a href="https://rafinska99.atlassian.net/browse/BOOK-8">Nie pojawia się komunikat walidacyjny przy polu "Confirm passworld"</a>
+            <span class="subText">
+               Utworzono: 25/lip/23                   &nbsp;Zaktualizowano: 25/lip/23
+
+                                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">Do zrobienia</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Projekt:</b></td>
+        <td width="80%"><a href="https://rafinska99.atlassian.net/secure/BrowseProject.jspa?id=10000">Booking</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Komponenty:</b></td>
+            <td>
+                            Brak
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Ma wpływ na wersje:</b></td>
+            <td>
+                            Brak
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Wersje do poprawienia:</b></td>
+            <td>
+                            Brak
+                </td>
+    </tr>
+    
+    </tbody></table>
+
+<br>
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tbody><tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Typ:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top" width="30%">
+            Błąd w programie
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priorytet:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap="">
+                Low
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Osoba zgłaszająca:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%">
+                                        
+                
+        
+            <a class="user-hover" rel="641f50549d2bc6c90a8bd37f" id="word_reporter_641f50549d2bc6c90a8bd37f" href="https://rafinska99.atlassian.net/secure/ViewProfile.jspa?accountId=641f50549d2bc6c90a8bd37f">
+                    Sandra
+                </a>
+
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Osoba przypisana:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap="" width="30%">
+                                    Nie przypisano
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Rozwiązanie:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap="">
+            				Nierozwiązane
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Głosy:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap="">
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Etykiety:</b>
+        </td>
+        <td id="labels-10007-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap="">
+                            Formularz                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Pozostały koszt:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap="" width="80%" colspan="3">
+                            Nie określono
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Czas poświęcony:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap="" width="80%" colspan="3">
+                            Nie określono
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Pierwotne oszacowanie:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap="" width="80%" colspan="3">
+                            Nie określono
+            		</td>
+    </tr>
+    
+    	<tr>
+
+		<td bgcolor="#f0f0f0" width="20%" valign="top">
+			<b>Środowisko:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" colspan="3">
+            <p>Testowe (Development)</p>
+		</td>
+	</tr>
+    </tbody></table>
+
+
+
+    <br>
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+                <tbody><tr>
+            <td bgcolor="#f0f0f0" width="20%" valign="top">
+                <b>Załączniki:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top">
+                                    <img src="./bdbvjcvdvc_files/image.gif" height="16" width="16" border="0" alt="Plik PNG">
+                    image-20230725-105057.png &nbsp;&nbsp;&nbsp;
+                            </td>
+        </tr>
+        
+    
+
+
+
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Rank:</b></td>
+                <td id="customfield_10019-10007-value" class="value" bgcolor="#ffffff" width="80%">      0|i0001j:
+  </td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Sprint:</b></td>
+                <td id="customfield_10020-10007-value" class="value" bgcolor="#ffffff" width="80%">Tablica Sprint 1</td>
+            </tr>
+            </tbody></table>
+
+    <br>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tbody><tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap="" align="center">
+            &nbsp;<font color="#ffffff"><b>Opis</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </tbody></table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tbody><tr>
+        <td id="descriptionArea">
+            <p>Przy pierwszym uruchomieniu aplikacji pojawił się formularz tworzenia konta admina, z dostepnymi polami:</p>
+
+<ul>
+	<li>Username</li>
+	<li>Password</li>
+	<li>Confirm password</li>
+</ul>
+
+
+<p>gdzie przy polu  “Confirm password” nie pojawiał się komunikat walidacyjny - mimo, że pole jest wymagane.</p>
+
+<h2><a name="Listakrok%C3%B3wdoreprodukcji%3A"></a>Lista kroków do reprodukcji:</h2>
+
+<ol>
+	<li>Otwieramy aplikację MrBuggy7</li>
+	<li>Klikamy przycisk “Save”</li>
+</ol>
+
+
+<h2><a name="Rzczywistyrezyltat%3A"></a>Rzczywisty rezyltat:</h2>
+
+<p>Przy polu “Confirm password” nie pojawił się komunikat walidacyjny “This field is required.”</p>
+
+<h2><a name="Oczekiwanyrezultat%3A"></a>Oczekiwany rezultat:</h2>
+
+<p>W przypadku, gdy użytkownik nie uzupełni pola “Confirm password” również pojawia się komunikat walidacyjny o treści: This field is required.</p>
+
+<h2><a name="Za%C5%82%C4%85cznik%3A"></a>Załącznik:</h2>
+
+<p><span class="image-wrap" style=""><img src="./bdbvjcvdvc_files/image-20230725-105057.png" height="506" width="693" style="border: 0px solid black"></span></p>
+            <br>
+        </td>
+    </tr>
+    </tbody></table>
+
+Wygenerowane (Tue Jul 25 10:56:03 UTC 2023) przez Sandra z użyciem systemu Jira 1001.0.0-SNAPSHOT#100233-sha1:f5b62552f86a368e0d46ff3c009eefff0c90fba8.
+
+
+</body></html>
