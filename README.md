@@ -2,7 +2,11 @@
 
 ## O MNIE 
 
-Cześć! Jestem specjalistą ds. jakości i monitoringu z pasją do testowania oprogramowania i programowania w języku Java. Moją ambicją jest doskonalenie się w roli testera oprogramowania. Jestem perfekcjonistą, dociekliwym badaczem oraz skrupulatnym problem solverem. Posiadam certyfikat ISTQB potwierdzający moje umiejętności w dziedzinie testowania oprogramowania.
+Aktualnie jestem specjalistą ds. jakości i monitoringu. Od wielu miesięcy zdobywam wiedzę
+z zakresu testowania oprogramowania oraz programowania w języku Java. Sądzę, że idealnie
+sprawdzę się w roli testera oprogramowania. Jestem osobą bardzo ambitną, uwielbiającą zdobywać
+nową wiedzę oraz umiejętności. Mój perfekcjonizm, dociekliwość i skrupulatność doskonale
+sprawdzają się na stanowiskach związanych z dbaniem o jakość. Moje umiejętności potwierdza certyfikat ISTQB FL
 
 ![certyfikat](images/CTFL3-2023-20979-SJSI_PL_Sandra_Rafinska.jpg)
 
@@ -36,7 +40,6 @@ Cześć! Jestem specjalistą ds. jakości i monitoringu z pasją do testowania o
 
 ## MOJA DOKUMENTACJA TESTOWA
 
-W moim portfolio znajdziesz różne elementy związane z dokumentacją testową, które pomagają mi w procesie testowania i utrzymaniu wysokiej jakości oprogramowania.
 
 ### PLAN TESTÓW
 
