@@ -40,21 +40,18 @@ W moim portfolio znajdziesz różne elementy związane z dokumentacją testową,
 
 ### PLAN TESTÓW
 
-![PLAN TESTÓW](images/testplan1.png)
-![PLAN TESTÓW](images/testplan2.png)
-![PLAN TESTÓW](images/testplan3.png)
+[Wyszukiwarka - plan testów](https://drive.google.com/file/d/1dTTG-CECq4TAZ4gf_1FWj9h3eGQ3BcMC/view?usp=sharing)
 
 ### ZGŁOSZENIE BŁĘDÓW
 
-![ZGŁOSZENIE BŁĘDÓW](images/mrbuggycz1.jpg)
-![ZGŁOSZENIE BŁĘDÓW](images/mrbuggycz2.jpg)
-![ZGŁOSZENIE BŁĘDÓW](images/mrbuggy2cz1.jpg)
-![ZGŁOSZENIE BŁĘDÓW](images/mrbuggy2cz2.jpg)
-![ZGŁOSZENIE BŁĘDÓW](images/mrbuggy3cz1.jpg)
-![ZGŁOSZENIE BŁĘDÓW](images/mrbuggy3cz2.jpg)
-![ZGŁOSZENIE BŁĘDÓW](images/booking1.jpg)
-![ZGŁOSZENIE BŁĘDÓW](images/booking2.jpg)
+[MrBuggy - zgłoszenie błędu 1](https://drive.google.com/file/d/11GSPfWJiDeeYIstSfk91PhDDSaiZdZ9L/view?usp=sharing)
+
+[MrBuggy - zgłoszenie błędu 2](https://drive.google.com/file/d/14dAqDec0aJIgr1B-rJibf9ofjsbbCV0b/view?usp=sharing)
+
+[MrBuggy - zgłoszenie błędu 3](https://drive.google.com/file/d/1T-Ykg4VzuBiC0ysbX1T7XDNDo2qZ5ww7/view?usp=sharing)
+
+[Booking - zgłoszenie błędu](https://drive.google.com/file/d/10_BRDB8bX0wX3fgB_pxZP1GNEHR1Qy6s/view?usp=sharing)
 
 ### PRZYPADKI TESTOWE
 
-![PRZYPADKI TESTOWE](images/przypadki_testowe.jpg)
+[Wyszukiwarka - przypadek testowy](https://drive.google.com/file/d/10S4bL5GkOKGsZzCNvrbDgJJ8bJCQKHpl/view?usp=sharing)
